@@ -71,4 +71,5 @@ add_subdirectory(rngs_chorus)
 add_subdirectory(rngs_ensemble)
 add_subdirectory(rngs_reverb)
 add_subdirectory(wrps)
+add_subdirectory(plts)
 

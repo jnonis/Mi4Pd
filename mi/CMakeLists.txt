@@ -59,6 +59,37 @@ set(STREAMS_SRC
        streams/vactrol.cc
        )
 
+set(PLAITS_SRC
+       plaits/dsp/voice.cc
+       plaits/dsp/engine/additive_engine.cc
+       plaits/dsp/engine/bass_drum_engine.cc
+       plaits/dsp/engine/chord_engine.cc
+       plaits/dsp/engine/fm_engine.cc
+       plaits/dsp/engine/grain_engine.cc
+       plaits/dsp/engine/hi_hat_engine.cc
+       plaits/dsp/engine/modal_engine.cc
+       plaits/dsp/engine/noise_engine.cc
+       plaits/dsp/engine/particle_engine.cc
+       plaits/dsp/engine/snare_drum_engine.cc
+       plaits/dsp/engine/speech_engine.cc
+       plaits/dsp/engine/string_engine.cc
+       plaits/dsp/engine/swarm_engine.cc
+       plaits/dsp/engine/virtual_analog_engine.cc
+       plaits/dsp/engine/waveshaping_engine.cc
+       plaits/dsp/engine/wavetable_engine.cc
+       plaits/dsp/speech/lpc_speech_synth.cc
+       plaits/dsp/speech/lpc_speech_synth_controller.cc
+       plaits/dsp/speech/lpc_speech_synth_phonemes.cc
+       plaits/dsp/speech/lpc_speech_synth_words.cc
+       plaits/dsp/speech/naive_speech_synth.cc
+       plaits/dsp/speech/sam_speech_synth.cc
+       plaits/dsp/physical_modelling/modal_voice.cc
+       plaits/dsp/physical_modelling/resonator.cc
+       plaits/dsp/physical_modelling/pm_string.cc
+       plaits/dsp/physical_modelling/string_voice.cc
+       plaits/resources.cc
+       )
+
 set(MI_COMMON_SRC
        stmlib/dsp/units.cc
        stmlib/dsp/atan.cc 
@@ -74,6 +105,7 @@ set(MILIB_SRC
         ${RINGS_SRC}
         ${BRAIDS_SRC}
         ${ELEMENTS_SRC}
+        ${PLAITS_SRC}
         )
 
 include_directories(
